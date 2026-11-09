@@ -1,26 +1,75 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --bg: #f7f7f5;
+  --surface: #ffffff;
+  --subtle: #f2f2ef;
+  --fg: #1c1b19;
+  --muted: #64635c;
+  --line: #e6e5e0;
+  --accent: #0b7363;
+  --accent-soft: #e6f4f1;
+  --warn: #9a5b00;
+  --warn-soft: #fdf3e2;
+  --danger: #b8322a;
+  --danger-soft: #fcecea;
+  --t-num: #2464b4;
+  --t-num-soft: #e9f1fb;
+  --t-date: #6e45b8;
+  --t-date-soft: #f1ecfa;
+  --series-1: #1baf7a;
+  --series-2: #2a78d6;
+  --series-3: #eb6834;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --bg: #111110;
+    --surface: #181817;
+    --subtle: #222220;
+    --fg: #ededea;
+    --muted: #a09f97;
+    --line: #2d2d2a;
+    --accent: #45c4ab;
+    --accent-soft: #163029;
+    --warn: #f0b24f;
+    --warn-soft: #34270f;
+    --danger: #f28074;
+    --danger-soft: #3a1d1a;
+    --t-num: #7fb0f0;
+    --t-num-soft: #1a2738;
+    --t-date: #b89cf0;
+    --t-date-soft: #2a2238;
+    --series-1: #199e70;
+    --series-2: #3987e5;
+    --series-3: #d95926;
   }
 }
 
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-subtle: var(--subtle);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-warn: var(--warn);
+  --color-warn-soft: var(--warn-soft);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --color-t-num: var(--t-num);
+  --color-t-num-soft: var(--t-num-soft);
+  --color-t-date: var(--t-date);
+  --color-t-date-soft: var(--t-date-soft);
+  --font-sans: var(--font-ui);
+  --font-mono: var(--font-code);
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  font-size: 15px;
+  line-height: 1.5;
 }
